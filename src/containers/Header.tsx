@@ -1,8 +1,8 @@
-import React, { memo } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import React, {memo} from 'react';
+import {Pressable, StyleSheet, Text, View} from 'react-native';
 
-import { Row, Spacer } from '../atoms';
-import { IcoMoon } from '../integrations/vector-icons';
+import {Row, Spacer} from '../atoms';
+import {IcoMoon} from '../integrations/vector-icons';
 
 export interface HeaderItem {
   name: string;

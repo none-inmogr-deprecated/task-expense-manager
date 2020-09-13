@@ -1,11 +1,11 @@
 import './constants';
 
-import React, { useEffect } from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
+import React, {useEffect} from 'react';
+import {SafeAreaView, StyleSheet} from 'react-native';
 
-import { createExpense, ExpenseContext } from './contexts';
-import { LocalStorage, StorageKeys } from './integrations';
-import { Navigation } from './Navigation';
+import {createExpense, ExpenseContext} from './contexts';
+import {LocalStorage, StorageKeys} from './integrations';
+import {Navigation} from './Navigation';
 
 const styles = StyleSheet.create({
   safeAreaView: {

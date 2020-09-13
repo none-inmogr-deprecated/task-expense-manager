@@ -1,9 +1,9 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
-import { ExpenseAdd, ExpenseEdit, ExpenseList, ExpenseView } from './pages';
+import {ExpenseAdd, ExpenseEdit, ExpenseList, ExpenseView} from './pages';
 
 const NavDefaultTheme = {
   dark: false,

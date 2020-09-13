@@ -1,12 +1,12 @@
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import moment from 'moment';
-import React, { memo, useState } from 'react';
-import { Alert, StyleSheet, View } from 'react-native';
-import { generateShortId } from 'short-id-generator';
+import React, {memo, useState} from 'react';
+import {Alert, StyleSheet, View} from 'react-native';
+import {generateShortId} from 'short-id-generator';
 
-import { Button, FlexSpacer, Input, Spacer } from '../atoms';
-import { Header } from '../containers';
-import { useExpense } from '../contexts';
+import {Button, FlexSpacer, Input, Spacer} from '../atoms';
+import {Header} from '../containers';
+import {useExpense} from '../contexts';
 
 const styles = StyleSheet.create({
   root: {

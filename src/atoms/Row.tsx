@@ -1,5 +1,5 @@
-import React, { memo, ReactNode } from 'react';
-import { StyleSheet, View } from 'react-native';
+import React, {memo, ReactNode} from 'react';
+import {StyleSheet, View} from 'react-native';
 
 export interface RowProps {
   children?: ReactNode;

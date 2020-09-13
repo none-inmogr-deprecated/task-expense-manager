@@ -1,12 +1,12 @@
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import moment from 'moment';
-import React, { memo } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import React, {memo} from 'react';
+import {Pressable, StyleSheet, Text, View} from 'react-native';
 
-import { FlexSpacer, Row, Spacer } from '../atoms';
-import { Header } from '../containers';
-import { useExpense } from '../contexts';
-import { IcoMoon } from '../integrations/vector-icons';
+import {FlexSpacer, Row, Spacer} from '../atoms';
+import {Header} from '../containers';
+import {useExpense} from '../contexts';
+import {IcoMoon} from '../integrations/vector-icons';
 
 const styles = StyleSheet.create({
   root: {

@@ -1,6 +1,6 @@
-import React, { memo } from 'react';
-import { StyleSheet, TextInputProps, View } from 'react-native';
-import { TextInput } from 'react-native-gesture-handler';
+import React, {memo} from 'react';
+import {StyleSheet, TextInputProps, View} from 'react-native';
+import {TextInput} from 'react-native-gesture-handler';
 
 export interface InputProps extends TextInputProps {
   // inputType

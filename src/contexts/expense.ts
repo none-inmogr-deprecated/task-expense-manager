@@ -1,7 +1,7 @@
-import { cloneDeep } from 'lodash';
-import { createContext, useContext, useState } from 'react';
+import {cloneDeep} from 'lodash';
+import {createContext, useContext, useState} from 'react';
 
-import { LocalStorage, StorageKeys } from '../integrations';
+import {LocalStorage, StorageKeys} from '../integrations';
 
 export type SetExpense = (data: Expense[]) => void | Promise<void>;
 

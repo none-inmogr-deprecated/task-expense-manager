@@ -1,11 +1,11 @@
-import { useNavigation } from '@react-navigation/native';
-import { cloneDeep } from 'lodash';
-import React, { Fragment, memo, useEffect, useState } from 'react';
-import { Alert, StyleSheet, View } from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+import {cloneDeep} from 'lodash';
+import React, {Fragment, memo, useEffect, useState} from 'react';
+import {Alert, StyleSheet, View} from 'react-native';
 
-import { Button, FlexSpacer, Input, Spacer } from '../atoms';
-import { Header } from '../containers';
-import { useExpense } from '../contexts';
+import {Button, FlexSpacer, Input, Spacer} from '../atoms';
+import {Header} from '../containers';
+import {useExpense} from '../contexts';
 
 const styles = StyleSheet.create({
   root: {
