@@ -18,6 +18,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* TaskExpenseManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TaskExpenseManagerTests.m */; };
 		5B0624DE9403D57AC1F39B7A /* libPods-TaskExpenseManager-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4611B7B4855FF5BEAD08DD /* libPods-TaskExpenseManager-tvOSTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		86327E0F250E113E003A175C /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86327E0E250E113E003A175C /* icomoon.ttf */; };
 		8CAF291A909652D90874AEFC /* libPods-TaskExpenseManager-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BB544BE5DDD4EA0E1C812A /* libPods-TaskExpenseManager-tvOS.a */; };
 		AFAC641C8243D924F66730C6 /* libPods-TaskExpenseManager-TaskExpenseManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC104B9AECCEE3729431379 /* libPods-TaskExpenseManager-TaskExpenseManagerTests.a */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		6324B91CF8B924DA2436E0D4 /* Pods-TaskExpenseManager-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskExpenseManager-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-TaskExpenseManager-tvOS/Pods-TaskExpenseManager-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		734242FC39A6B68435385E77 /* Pods-TaskExpenseManager-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskExpenseManager-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-TaskExpenseManager-tvOSTests/Pods-TaskExpenseManager-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TaskExpenseManager/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86327E0E250E113E003A175C /* icomoon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = icomoon.ttf; sourceTree = "<group>"; };
 		9DC104B9AECCEE3729431379 /* libPods-TaskExpenseManager-TaskExpenseManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaskExpenseManager-TaskExpenseManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E618C7B1BA18A5BFB3B339E8 /* Pods-TaskExpenseManager-TaskExpenseManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskExpenseManager-TaskExpenseManagerTests.release.xcconfig"; path = "Target Support Files/Pods-TaskExpenseManager-TaskExpenseManagerTests/Pods-TaskExpenseManager-TaskExpenseManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		E75CEBE88631991A36C45689 /* Pods-TaskExpenseManager-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskExpenseManager-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-TaskExpenseManager-tvOSTests/Pods-TaskExpenseManager-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				86327E09250E1121003A175C /* fonts */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
@@ -182,6 +185,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		86327E09250E1121003A175C /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				86327E0E250E113E003A175C /* icomoon.ttf */,
+			);
+			name = fonts;
+			path = TaskExpenseManager/fonts;
+			sourceTree = "<group>";
+		};
 		EAA4BD0F67F744A32663D107 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,7 +206,6 @@
 				734242FC39A6B68435385E77 /* Pods-TaskExpenseManager-tvOSTests.debug.xcconfig */,
 				E75CEBE88631991A36C45689 /* Pods-TaskExpenseManager-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -340,6 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86327E0F250E113E003A175C /* icomoon.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
