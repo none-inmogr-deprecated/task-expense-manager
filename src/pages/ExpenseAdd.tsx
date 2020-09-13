@@ -18,27 +18,16 @@ const styles = StyleSheet.create({
 export const ExpenseAdd = memo(() => {
   const navigation = useNavigation();
   const expense = useExpense();
-  const [value, setValue] = useState<number | undefined>(undefined);
-
-  const onChangeText = (text?: string) => {
-    if (text === undefined) {
-      setValue(undefined);
-      return;
-    }
-    const amount = parseInt(text, 10);
-    if (amount === NaN) {
-      Alert.alert('Please enter a number');
-      return;
-    }
-    setValue(amount);
-  };
+  const [value, setValue] = useState<string | undefined>(undefined);
 
   const save = () => {
-    if (typeof value !== 'number') {
+    const amount = Number(value);
+    if (isNaN(amount)) {
+      Alert.alert('Please enter a valid amount');
       return;
     }
     expense.append({
-      amount: value,
+      amount: amount,
       date: moment().toISOString(),
       id: generateShortId(),
     });
@@ -61,7 +50,7 @@ export const ExpenseAdd = memo(() => {
       <Spacer space={32} />
       <Input
         value={`${value || ''}`}
-        onChangeText={onChangeText}
+        onChangeText={setValue}
         placeholder="Enter Amount"
       />
       <FlexSpacer />
