@@ -1,8 +1,10 @@
 import './constants';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 
+import { createExpense, ExpenseContext } from './contexts';
+import { LocalStorage, StorageKeys } from './integrations';
 import { Navigation } from './Navigation';
 
 const styles = StyleSheet.create({
@@ -13,10 +15,24 @@ const styles = StyleSheet.create({
 });
 
 const App = () => {
+  const expense = createExpense();
+
+  const fetchExpense = async () => {
+    const items =
+      (await LocalStorage.getItem<Expense[]>(StorageKeys.EXPENSE_LIST)) || [];
+    expense.set(items);
+  };
+
+  useEffect(() => {
+    fetchExpense;
+  }, []);
+
   return (
-    <SafeAreaView style={styles.safeAreaView}>
-      <Navigation />
-    </SafeAreaView>
+    <ExpenseContext.Provider value={expense}>
+      <SafeAreaView style={styles.safeAreaView}>
+        <Navigation />
+      </SafeAreaView>
+    </ExpenseContext.Provider>
   );
 };
 
