@@ -28,10 +28,6 @@ export const ExpenseList = memo(() => {
   const navigation = useNavigation();
   const expense = useExpense();
 
-  const onPressItem = () => {
-    navigation.navigate(global.ROUTES.EXPENSE_VIEW);
-  };
-
   return (
     <View style={styles.root}>
       <Header
@@ -44,6 +40,9 @@ export const ExpenseList = memo(() => {
         }}
       />
       {expense.data.map((item, index) => {
+        const onPressItem = () => {
+          navigation.navigate(global.ROUTES.EXPENSE_VIEW, {id: item.id});
+        };
         return (
           <Pressable key={index} onPress={onPressItem}>
             <View style={styles.viewItem}>
