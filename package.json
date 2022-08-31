@@ -28,7 +28,7 @@
     "intl": "1.2.5",
     "lodash": "4.17.19",
     "moment": "2.27.0",
-    "moment-timezone": "0.5.31",
+    "moment-timezone": "0.5.35",
     "prettier": "2.0.5",
     "react": "16.13.1",
     "react-native": "0.63.2",
